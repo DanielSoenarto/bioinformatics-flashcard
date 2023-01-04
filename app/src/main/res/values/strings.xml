@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bioinformatics Flashcard</string>
+    <string name="content_categories">Content Categories</string>
+    <string name="introduction">Introduction</string>
+    <string name="learning_roadmap">Learning Roadmap</string>
+    <string name="genomics">Genomics</string>
+    <string name="metagenomics">Meta\ngenomics</string>
+    <string name="metabolomics">Metabolomics</string>
+    <string name="proteomics">Proteomics</string>
+    <string name="transcript_nomics">Transcript\nomics</string>
+    <string name="epigenetics">Epigenetics</string>
+    <string name="learning_materials">Learning\nMaterials</string>
+    <string name="content_introduction">Content: Introduction</string>
+    <string name="Exercise" />
+    <string name="exercise">Exercise</string>
+    <string name="exercise_flashcard">Exercise Flashcard</string>
+    <string name="what_is_bioinformatics">What is Bioinformatics?</string>
+    <string name="text_what_is_bioinfo">        Bioinformatics involves computer technology to store and analyze biological data such as DNA/amino acid sequences.
+
+        Scientists use databases to collect and organize many biological information in order to better understand health, diseases, and gain insights.
+
+        Back in the days, the main challenge was how scientists could gain such information. Now, the challenge is how to understand and interpret the big amount of data that has been collected. Since these data are large in size, computers are used to aid us.
+
+                            (Adams, 2022)</string>
+</resources>
