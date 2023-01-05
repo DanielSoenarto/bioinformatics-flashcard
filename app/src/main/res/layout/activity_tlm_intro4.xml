@@ -7,4 +7,132 @@
     android:layout_height="match_parent"
     tools:context=".tlm_intro_4">
 
+  <Button
+      android:id="@+id/button_intro_4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:onClick="launch_TLM_5"
+      android:text="@string/next"
+      app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <Button
+      android:id="@+id/button_back_to_3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:onClick="launch_TLM_3"
+      android:text="@string/previous"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/button_intro_4" />
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ffffff"
+      android:orientation="vertical"
+      android:weightSum="10"
+      app:layout_constraintBaseline_toBaselineOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+      <TextView
+          android:id="@+id/human_genome_project"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="0dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginBottom="0dp"
+          android:gravity="center"
+          android:text="@string/human_genome_project"
+          android:textColor="@color/black"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="15dp"
+        android:rowCount="2">
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/img_hgp"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:layout_rowWeight="0.5"
+          android:layout_columnWeight="1"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginBottom="15dp"
+          app:cardBackgroundColor="@color/white"
+          app:cardCornerRadius="8dp"
+          app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="251dp"
+            android:layout_height="215dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="244dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:src="@drawable/hgp"/>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/text_hgp"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginBottom="15dp"
+          app:cardBackgroundColor="#d5ecc2"
+          app:cardCornerRadius="8dp"
+          app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/text_hgp"
+              android:textColor="@color/black"
+              android:textSize="16sp">
+
+          </TextView>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+  </LinearLayout>
   </androidx.constraintlayout.widget.ConstraintLayout>

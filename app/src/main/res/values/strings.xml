@@ -22,4 +22,8 @@
     <string name="previous">Previous</string>
     <string name="golden_biotechnology">Golden Biotechnology</string>
     <string name="da_silva">According to Edgar Da Silva (former Director Division of Life Sciences, UNESCO), Bioinformatics is part of Gold biotechnology, where this field uses computer science as a main driving force (DaSilva, 2004).</string>
+    <string name="human_genome_project">Human Genome Project</string>
+    <string name="text_hgp">The Human Genome Project was an international research project whose objective was to complete mapping and understanding of all the genes of humans (NHGRI, 2022). The project began in 1990 and finished in 2003. Approximately half of the genes identified in this project had no known function, until researchers used bioinformatics to establish their functions, develop gene-based strategies for preventing, diagnosing, and treating disease (NHGRI, 2013).</string>
+    <string name="why_bioinformatics">Why Bioinformatics?</string>
+    <string name="why_bioinfo">Importance of Bioinformatics (Singh &amp; Kumar, 2021): \n\n- Drug discovery and repurposing \n- Vaccine design \n- Precision medicine \n- Forensic science \n- Genome annotation and analysis \n- Protein structure prediction \n- Omics analysis \n- Etc \n\nOverall, Bioinformatics serves a lot of purpose and benefits to the world.</string>
 </resources>
