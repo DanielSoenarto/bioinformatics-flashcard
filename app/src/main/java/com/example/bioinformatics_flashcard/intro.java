@@ -11,6 +11,7 @@ public class intro extends AppCompatActivity implements View.OnClickListener {
 
     // create variables
     private CardView tlm_intro, flashcard;
+    private String selectedTopicName = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
