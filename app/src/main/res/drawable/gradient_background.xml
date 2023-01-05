@@ -4,7 +4,7 @@
     >
 
     <gradient
-        android:startColor="@color/material_dynamic_primary80"
+        android:startColor="#55B4E4"
         android:endColor="#0570C2"
         android:angle="135"
         >

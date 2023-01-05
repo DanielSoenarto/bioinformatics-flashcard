@@ -15,11 +15,11 @@
     <string name="exercise">Exercise</string>
     <string name="exercise_flashcard">Exercise Flashcard</string>
     <string name="what_is_bioinformatics">What is Bioinformatics?</string>
-    <string name="text_what_is_bioinfo">        Bioinformatics involves computer technology to store and analyze biological data such as DNA/amino acid sequences.
-
-        Scientists use databases to collect and organize many biological information in order to better understand health, diseases, and gain insights.
-
-        Back in the days, the main challenge was how scientists could gain such information. Now, the challenge is how to understand and interpret the big amount of data that has been collected. Since these data are large in size, computers are used to aid us.
-
-                            (Adams, 2022)</string>
+    <string name="text_what_is_bioinfo">Bioinformatics involves computer technology to store and analyze biological data such as DNA/amino acid sequences. \n\nScientists use databases to collect and organize biological information in order to better understand health, diseases, and gain insights. \n\nNow, Bioinformaticians are left to understand and interpret the big amount of data that has been collected by the aid of computers.\n\n(Adams, 2022)</string>
+    <string name="next">Next</string>
+    <string name="multidisciplinary_field">Multidisciplinary Field</string>
+    <string name="multi_field">It is a field where Biology meets Computer Science and Statistics (Nattestad, 2017). Bioinformatics has been used for in silico analysis, which means conducted or produced by computer modeling or computer simulation (Fielden et al., 2002).</string>
+    <string name="previous">Previous</string>
+    <string name="golden_biotechnology">Golden Biotechnology</string>
+    <string name="da_silva">According to Edgar Da Silva (former Director Division of Life Sciences, UNESCO), Bioinformatics is part of Gold biotechnology, where this field uses computer science as a main driving force (DaSilva, 2004).</string>
 </resources>

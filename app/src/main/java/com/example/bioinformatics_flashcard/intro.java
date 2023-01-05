@@ -31,7 +31,7 @@ public class intro extends AppCompatActivity implements View.OnClickListener {
         Intent i;
         switch ((v.getId())) {
             case R.id.tlm_intro:
-                i = new Intent(this, tlm_intro.class);
+                i = new Intent(this, com.example.bioinformatics_flashcard.tlm_intro.class);
                 startActivity(i);
                 break;
             case R.id.flashcard_intro:

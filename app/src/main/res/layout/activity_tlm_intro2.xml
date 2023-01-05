@@ -4,18 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tlm_intro">
+    tools:context=".tlm_intro_2">
 
     <Button
-        android:id="@+id/button_intro_1"
+        android:id="@+id/button_intro_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="launch_TLM_2"
+        android:onClick="launch_TLM_3"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_back_to_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="launch_TLM_1"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_intro_2" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -32,7 +43,7 @@
             android:layout_weight="1.2">
 
             <TextView
-                android:id="@+id/what_is_bioinfo"
+                android:id="@+id/multi_field"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -44,7 +55,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="0dp"
                 android:gravity="center"
-                android:text="@string/what_is_bioinformatics"
+                android:text="@string/multidisciplinary_field"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -62,35 +73,35 @@
             android:rowCount="2">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/img_bioinfo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:id="@+id/venn_diagram"
+                android:layout_width="212dp"
+                android:layout_height="250dp"
                 android:layout_rowWeight="0.5"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#F1E3B6"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="401dp"
+                    android:layout_height="342dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="125dp"
+                        android:layout_width="372dp"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/bioinformatics_cropped" />
+                        android:src="@drawable/venn_diagram" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/text_what_bioinfo"
+                android:id="@+id/text_multi_field"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -112,7 +123,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_what_is_bioinfo"
+                        android:text="@string/multi_field"
                         android:textColor="@color/black"
                         android:textSize="16sp">
 
@@ -123,5 +134,4 @@
         </GridLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
