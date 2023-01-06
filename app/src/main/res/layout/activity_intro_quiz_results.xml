@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".intro_quiz_results">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/final_msg_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="@string/final_msg"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="29sp"/>
+
+    <Button
+        android:id="@+id/button_back_intro_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="launch_intro_home"
+        android:text="@string/return_to_home" />
+
+    <LinearLayout
+        android:layout_below="@id/final_msg_quiz"
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correct_answers"
+            android:text="@string/correct_answers_0"
+            android:textStyle="bold"
+            android:textColor="#00C853"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incorrect_answers"
+            android:layout_marginTop="10dp"
+            android:text="@string/wrong_answers_0"
+            android:textColor="#DD2C00"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

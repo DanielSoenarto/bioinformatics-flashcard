@@ -13,7 +13,7 @@ public class QuestionsBank {
                 "A field that involves lab equipments to store and analyze data",
                 "A technique to store any data in the database",
                 "A field that uses computer to store and analyze biological data",
-                "A field that study computer hardwares and design websites",
+                "A field that studies computer hardwares and design websites",
                 "A field that uses computer to store and analyze biological data",
                 "");
 
@@ -33,12 +33,12 @@ public class QuestionsBank {
                 "Biological",
                 "");
 
-        final QuestionsList intro_question_4 = new QuestionsList("Bioinformatics is a _____ field?",
-                "Multidisciplinary",
-                "Single",
-                "Lame",
-                "Innovative",
-                "Multidisciplinary",
+        final QuestionsList intro_question_4 = new QuestionsList("What does Gold Biotechnology involve with?",
+                "Fermentation",
+                "Aquaculture",
+                "Computers",
+                "Bioterrorism",
+                "Computers",
                 "");
 
         final QuestionsList intro_question_5 = new QuestionsList("What do Scientists use to store biological information?",
@@ -76,7 +76,7 @@ public class QuestionsBank {
         final QuestionsList intro_question_9 = new QuestionsList("These are the applications of Bioinformatics, except ____?",
                 "Precision medicine",
                 "Vaccine design",
-                "Black",
+                "Cell culture",
                 "Omics analysis",
                 "Cell culture",
                 "");

@@ -4,6 +4,7 @@ import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class flashcard_intro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flashcard_intro);
 
+        // get the id for the question and options
         question = findViewById(R.id.question_intro_1);
 
         option_1 = findViewById(R.id.option_1);
@@ -40,8 +42,10 @@ public class flashcard_intro extends AppCompatActivity {
         option_3 = findViewById(R.id.option_3);
         option_4 = findViewById(R.id.option_4);
 
+        // get the id for the next button
         next_button = findViewById(R.id.next_button);
 
+        // questionsLists is to get the questions from the QuestionsBank
         questionsLists = QuestionsBank.getQuestions();
 
         question.setText(questionsLists.get(0).getQuestion());
@@ -50,6 +54,7 @@ public class flashcard_intro extends AppCompatActivity {
         option_3.setText(questionsLists.get(0).getOption_3());
         option_4.setText(questionsLists.get(0).getOption_4());
 
+        // setOnClickListener method for every options
         option_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,6 +136,8 @@ public class flashcard_intro extends AppCompatActivity {
         });
     }
 
+    // next question method
+    @SuppressLint("SetTextI18n")
     private void changeNextQuestion() {
         currentQuestionPosition++;
 
@@ -169,6 +176,7 @@ public class flashcard_intro extends AppCompatActivity {
         }
     }
 
+    // method to count all of the correct answers
     private int getCorrectAnswers(){
 
         int correctAnswers = 0;
@@ -186,6 +194,7 @@ public class flashcard_intro extends AppCompatActivity {
         return correctAnswers;
     }
 
+    // method to count all of the incorrect answers
     private int getInCorrectAnswers(){
 
         int correctAnswers = 0;
@@ -203,6 +212,7 @@ public class flashcard_intro extends AppCompatActivity {
         return correctAnswers;
     }
 
+    // reveal answer method for the correct answers: set the button background as green
     private void revealAnswer(){
         final String getAnswer = questionsLists.get(currentQuestionPosition).getAnswer();
 
